@@ -39,3 +39,45 @@ html.screenshot-open,body.screenshot-open{overflow:hidden}
 .screenshot-dialog img{display:block;width:auto;height:auto;max-width:calc(94vw - 22px);max-height:calc(92vh - 56px);max-height:calc(92dvh - 56px);object-fit:contain}
 .screenshot-close{position:absolute;top:2px;right:3px;width:40px;height:40px;padding:0;border:0;border-radius:5px;background:transparent;color:var(--text);font:28px/1 Arial,sans-serif;cursor:pointer}
 .screenshot-close:hover{color:var(--accent)}
+
+.project-detail .page-shell {
+  width: min(100% - 64px, 1440px);
+}
+.project-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+.project-source {
+  max-width: 680px;
+  margin-bottom: 24px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+}
+.project-source h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.project-source a {
+  color: var(--accent);
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (min-width: 960px) {
+  .project-content {
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    align-items: start;
+    gap: clamp(28px, 4vw, 64px);
+  }
+  .project-content > :is(.project-demo, .project-showcase) {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .project-detail .page-shell {
+    width: calc(100% - 40px);
+  }
+}

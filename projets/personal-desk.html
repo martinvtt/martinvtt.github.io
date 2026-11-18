@@ -7,33 +7,37 @@
   <meta name="color-scheme" content="light">
   <link rel="icon" href="../icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../project-page.css?v=capture-fit-3">
+  <link rel="stylesheet" href="../project-page.css?v=wide-projects-1">
   
   <script src="../screenshot.js?v=capture-fit-3" defer></script>
 <link rel="stylesheet" href="../themes.css?v=6">
 <script src="../theme.js?v=6"></script>
 </head>
-<body>
+<body class="project-detail">
   <a href="#main" class="skip">Skip to content</a>
   <div class="page-shell">
     <header class="header"><a href="../index.html" class="wordmark" aria-label="Martin Vitte, home">mv.</a><nav aria-label="Main navigation"><a href="../index.html#projets">Projects</a><a href="../index.html#contact">Contact</a></nav><details class="theme-menu"><summary aria-label="Choose color theme"><span class="theme-current-dot" aria-hidden="true"></span><span class="theme-current-name">Pearl</span><span class="theme-chevron" aria-hidden="true">⌄</span></summary><fieldset class="theme-picker"><legend class="sr-only">Color theme</legend><label class="theme-option" style="--swatch:#e1dcd0"><input type="radio" name="theme" value="pearl" aria-label="Pearl" checked><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Pearl</span></label><label class="theme-option" style="--swatch:#edb9ca"><input type="radio" name="theme" value="rose" aria-label="Rose"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Rose</span></label><label class="theme-option" style="--swatch:#bcd3ac"><input type="radio" name="theme" value="sage" aria-label="Sage"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Sage</span></label><label class="theme-option" style="--swatch:#afd3f0"><input type="radio" name="theme" value="sky" aria-label="Sky"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Sky</span></label><label class="theme-option" data-dark style="--swatch:#294563"><input type="radio" name="theme" value="midnight" aria-label="Midnight"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Midnight</span></label><label class="theme-option" data-dark style="--swatch:#292929"><input type="radio" name="theme" value="black" aria-label="Black"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Black</span></label></fieldset></details></header>
     <main id="main" class="project-page">
       <a class="back-link" href="../index.html#projets">← All projects</a>
       <header class="project-intro"><div class="project-meta"><span>PERSONAL TOOL</span><span class="status">In development</span></div><h1>Personal Desk</h1><p>A local workspace for emails, your calendar and tasks, with notes for your ideas and an encrypted vault for copies of documents.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>SQLite</li><li>Microsoft Graph</li><li>JavaScript</li></ul></header>
-      <section class="project-demo" aria-labelledby="demo-title">
-        <h2 id="demo-title">See it in action</h2>
-        <video controls playsinline preload="none" poster="../media/personal-desk.png" aria-label="Project demonstration">
-          <source src="../media/personal-desk.webm" type="video/webm">
-          <p><a href="../media/personal-desk.webm">Open the video</a></p>
-        </video>
-        <p class="demo-caption">Personal Desk in demo mode · fictional data.</p>
-        <p class="demo-description">Explore the dashboard, change the theme, then add and complete a sample task.</p>
-        <a class="capture-link" href="../media/personal-desk.png">View full-size screenshot ↗</a>
-      </section>
-      <div class="project-body project-narrative">
-        <p>I had a few ideas in mind: a dashboard for my emails and calendar, somewhere to keep my notes, and eventually a “second brain”. Personal Desk grew out of wanting to bring those ideas into one application.</p>
-        <p>It brings together Microsoft emails, calendar events and tasks, alongside searchable notes. I also added several themes and a vault for encrypted copies of documents. A version with a Windows installer is available.</p>
-        <p>The app works locally, with optional Claude planning after reviewing the data to send. Notes and tasks can be exported and restored. For now, encryption applies only to document copies placed in the vault, not to ordinary notes. The vault has not been independently audited.</p>
+      <div class="project-content">
+        <section class="project-demo" aria-labelledby="demo-title">
+          <h2 id="demo-title">See it in action</h2>
+          <video controls playsinline preload="none" poster="../media/personal-desk.png" aria-label="Project demonstration">
+            <source src="../media/personal-desk.webm" type="video/webm">
+            <p><a href="../media/personal-desk.webm">Open the video</a></p>
+          </video>
+          <p class="demo-caption">Personal Desk in demo mode · fictional data.</p>
+          <p class="demo-description">Explore the dashboard, change the theme, then add and complete a sample task.</p>
+          <a class="capture-link" href="../media/personal-desk.png">View full-size screenshot ↗</a>
+        </section>
+        <div class="project-notes">
+          <div class="project-body project-narrative">
+            <p>I had a few ideas in mind: a dashboard for my emails and calendar, somewhere to keep my notes, and eventually a “second brain”. Personal Desk grew out of wanting to bring those ideas into one application.</p>
+            <p>It brings together Microsoft emails, calendar events and tasks, alongside searchable notes. I also added several themes and a vault for encrypted copies of documents. A version with a Windows installer is available.</p>
+            <p>The app works locally, with optional Claude planning after reviewing the data to send. Notes and tasks can be exported and restored. For now, encryption applies only to document copies placed in the vault, not to ordinary notes. The vault has not been independently audited.</p>
+          </div>
+        </div>
       </div>
       <div class="project-return"><a class="button primary" href="../index.html#projets"><span aria-hidden="true">←</span> Back to projects</a></div>
     </main>

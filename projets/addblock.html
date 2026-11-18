@@ -7,35 +7,41 @@
   <meta name="color-scheme" content="light">
   <link rel="icon" href="../icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../project-page.css?v=capture-fit-3">
+  <link rel="stylesheet" href="../project-page.css?v=wide-projects-1">
   
   <script src="../screenshot.js?v=capture-fit-3" defer></script>
 <link rel="stylesheet" href="../themes.css?v=6">
 <script src="../theme.js?v=6"></script>
 </head>
-<body>
+<body class="project-detail">
   <a href="#main" class="skip">Skip to content</a>
   <div class="page-shell">
     <header class="header"><a href="../index.html" class="wordmark" aria-label="Martin Vitte, home">mv.</a><nav aria-label="Main navigation"><a href="../index.html#projets">Projects</a><a href="../index.html#contact">Contact</a></nav><details class="theme-menu"><summary aria-label="Choose color theme"><span class="theme-current-dot" aria-hidden="true"></span><span class="theme-current-name">Pearl</span><span class="theme-chevron" aria-hidden="true">⌄</span></summary><fieldset class="theme-picker"><legend class="sr-only">Color theme</legend><label class="theme-option" style="--swatch:#e1dcd0"><input type="radio" name="theme" value="pearl" aria-label="Pearl" checked><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Pearl</span></label><label class="theme-option" style="--swatch:#edb9ca"><input type="radio" name="theme" value="rose" aria-label="Rose"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Rose</span></label><label class="theme-option" style="--swatch:#bcd3ac"><input type="radio" name="theme" value="sage" aria-label="Sage"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Sage</span></label><label class="theme-option" style="--swatch:#afd3f0"><input type="radio" name="theme" value="sky" aria-label="Sky"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Sky</span></label><label class="theme-option" data-dark style="--swatch:#294563"><input type="radio" name="theme" value="midnight" aria-label="Midnight"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Midnight</span></label><label class="theme-option" data-dark style="--swatch:#292929"><input type="radio" name="theme" value="black" aria-label="Black"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Black</span></label></fieldset></details></header>
     <main id="main" class="project-page">
       <a class="back-link" href="../index.html#projets">← All projects</a>
-      <header class="project-intro"><div class="project-meta"><span>BROWSER EXTENSION</span><span class="status">Available to use</span></div><h1>Addblock</h1><p>Reduce unwanted ads and pop-ups, with the option to pause protection on individual sites.</p><ul class="tags" aria-label="Technologies"><li>JavaScript</li><li>Manifest V3</li><li>Chrome / Edge</li></ul>
-        <p><a class="capture-link" href="https://github.com/martinvtt/addblock">View source on GitHub <span aria-hidden="true">↗</span></a></p>
-      </header>
-      <section class="project-demo" aria-labelledby="demo-title">
-        <h2 id="demo-title">See it in action</h2>
-        <video controls playsinline preload="none" poster="../media/addblock.png" aria-label="Project demonstration">
-          <source src="../media/addblock.webm" type="video/webm">
-          <p><a href="../media/addblock.webm">Open the video</a></p>
-        </video>
-        <p class="demo-caption">Addblock running on its local test page · original French interface · no advertising servers contacted.</p>
-        <p class="demo-description">The sample ad is visible while protection is paused and disappears when protection is enabled. A test click then tries to open an unwanted tab, which is blocked. Useful content stays visible.</p>
-        <a class="capture-link" href="../media/addblock.png">View full-size screenshot ↗</a>
-      </section>
-      <div class="project-body project-narrative">
-        <p>I started this project because I was tired of intrusive ads and windows opening whenever I clicked something. I wanted to build an extension I could actually use in my own browser.</p>
-        <p>Addblock blocks advertising requests, hides some ad placements and limits pop-ups. You can pause it on individual sites. It can be installed manually in Chrome or Edge.</p>
-        <p>It does not block everything: websites change, rules need updating, and some sites detect the extension. It is not available in browser extension stores yet.</p>
+      <header class="project-intro"><div class="project-meta"><span>BROWSER EXTENSION</span><span class="status">Available to use</span></div><h1>Addblock</h1><p>Reduce unwanted ads and pop-ups, with the option to pause protection on individual sites.</p><ul class="tags" aria-label="Technologies"><li>JavaScript</li><li>Manifest V3</li><li>Chrome / Edge</li></ul></header>
+      <div class="project-content">
+        <section class="project-demo" aria-labelledby="demo-title">
+          <h2 id="demo-title">See it in action</h2>
+          <video controls playsinline preload="none" poster="../media/addblock.png" aria-label="Project demonstration">
+            <source src="../media/addblock.webm" type="video/webm">
+            <p><a href="../media/addblock.webm">Open the video</a></p>
+          </video>
+          <p class="demo-caption">Addblock running on its local test page · original French interface · no advertising servers contacted.</p>
+          <p class="demo-description">The sample ad is visible while protection is paused and disappears when protection is enabled. A test click then tries to open an unwanted tab, which is blocked. Useful content stays visible.</p>
+          <a class="capture-link" href="../media/addblock.png">View full-size screenshot ↗</a>
+        </section>
+        <div class="project-notes">
+          <section class="project-source" aria-labelledby="source-title">
+            <h2 id="source-title">Source code</h2>
+            <a href="https://github.com/martinvtt/addblock">View source on GitHub <span aria-hidden="true">↗</span></a>
+          </section>
+          <div class="project-body project-narrative">
+            <p>I started this project because I was tired of intrusive ads and windows opening whenever I clicked something. I wanted to build an extension I could actually use in my own browser.</p>
+            <p>Addblock blocks advertising requests, hides some ad placements and limits pop-ups. You can pause it on individual sites. It can be installed manually in Chrome or Edge.</p>
+            <p>It does not block everything: websites change, rules need updating, and some sites detect the extension. It is not available in browser extension stores yet.</p>
+          </div>
+        </div>
       </div>
       <div class="project-return"><a class="button primary" href="../index.html#projets"><span aria-hidden="true">←</span> Back to projects</a></div>
     </main>

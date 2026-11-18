@@ -83,7 +83,7 @@
 }
 
 /* Keep the surrounding page quiet while giving projects room for previews. */
-.portfolio-home .page-shell{width:min(100% - 64px,1100px)}
+.portfolio-home .page-shell{width:min(100% - 64px,1440px)}
 .portfolio-home .intro{padding:48px 0 52px}
 .project-grid > .project{padding:0;gap:0;justify-content:initial}
 .project-grid .project-visual{height:400px;min-height:400px}
