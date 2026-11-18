@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assembly Maze — Martin Vitte</title>
+  <meta name="description" content="A maze written in x86-64 assembly to explore registers, memory, branching and Linux system calls.">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../project-page.css?v=capture-fit-3">
+  <script src="../maze.js" defer></script>
+<link rel="stylesheet" href="../themes.css?v=6">
+<script src="../theme.js?v=6"></script>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+  <div class="page-shell">
+    <header class="header"><a href="../index.html" class="wordmark" aria-label="Martin Vitte, home">mv.</a><nav aria-label="Main navigation"><a href="../index.html#projets">Projects</a><a href="../index.html#contact">Contact</a></nav><details class="theme-menu"><summary aria-label="Choose color theme"><span class="theme-current-dot" aria-hidden="true"></span><span class="theme-current-name">Pearl</span><span class="theme-chevron" aria-hidden="true">⌄</span></summary><fieldset class="theme-picker"><legend class="sr-only">Color theme</legend><label class="theme-option" style="--swatch:#e1dcd0"><input type="radio" name="theme" value="pearl" aria-label="Pearl" checked><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Pearl</span></label><label class="theme-option" style="--swatch:#edb9ca"><input type="radio" name="theme" value="rose" aria-label="Rose"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Rose</span></label><label class="theme-option" style="--swatch:#bcd3ac"><input type="radio" name="theme" value="sage" aria-label="Sage"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Sage</span></label><label class="theme-option" style="--swatch:#afd3f0"><input type="radio" name="theme" value="sky" aria-label="Sky"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Sky</span></label><label class="theme-option" data-dark style="--swatch:#294563"><input type="radio" name="theme" value="midnight" aria-label="Midnight"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Midnight</span></label><label class="theme-option" data-dark style="--swatch:#292929"><input type="radio" name="theme" value="black" aria-label="Black"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Black</span></label></fieldset></details></header>
+    <main id="main" class="project-page">
+      <a class="back-link" href="../index.html#projets">← All projects</a>
+      <header class="project-intro"><div class="project-meta"><span>BACK TO BASICS</span><span class="status">Playable in the terminal</span></div><h1>Assembly Maze</h1><p>A maze written in x86-64 assembly to explore registers, memory, branching and Linux system calls.</p><ul class="tags" aria-label="Technologies"><li>x86-64</li><li>NASM</li><li>Linux</li><li>GDB</li></ul></header>
+      <div class="project-showcase"><div class="project-visual terminal-visual"><div class="terminal-heading"><span class="window-dots">● ● ●</span><span>assembly-maze / interactive preview</span></div><pre id="maze-board" tabindex="0" aria-label="Maze. Focus this area and use the arrow keys or WASD. ZQSD also works."></pre><div class="maze-bottom"><p id="maze-status" role="status">Reach S · 0 moves</p><button id="maze-reset" type="button">Restart ↺</button></div><div class="maze-controls" role="group" aria-label="Movement"><button data-move="up" aria-label="Move up">↑</button><button data-move="left" aria-label="Move left">←</button><button data-move="down" aria-label="Move down">↓</button><button data-move="right" aria-label="Move right">→</button></div><p class="terminal-footnote">JavaScript simulation · the original project is written in assembly.</p></div></div>
+      <div class="project-body project-narrative">
+        <p>I wanted to get a better grasp of x86-64 assembly by building something. I chose a small maze: move a character, run into walls and find the way out.</p>
+        <p>The program runs in a Linux terminal without the C library. Every move involves the player’s position, memory and branching. The original game uses ZQSD followed by Enter, R to restart and X to quit. Automated tests include complete playthroughs.</p>
+        <p>The interactive preview uses the same map in JavaScript so you can try it here with the arrow keys or WASD. The original project is written in assembly and runs on Linux, including Ubuntu or WSL.</p>
+      </div>
+      <div class="project-return"><a class="button primary" href="../index.html#projets"><span aria-hidden="true">←</span> Back to projects</a></div>
+    </main>
+    <footer><span>Martin Vitte / Assembly Maze</span><a href="../index.html">Back to portfolio ↑</a></footer>
+  </div>
+</body>
+</html>

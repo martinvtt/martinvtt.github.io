@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Martin Vitte, computer engineering student. Projects and contact.">
+<meta name="color-scheme" content="light"><title>Martin Vitte — Portfolio</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="cards.css">
+<link rel="stylesheet" href="projects.css">
+
+<script src="maze.js" defer></script>
+<script src="contact.js" defer></script>
+<link rel="stylesheet" href="themes.css?v=6">
+<script src="theme.js?v=6"></script>
+</head>
+<body class="portfolio-home">
+<a class="skip" href="#main">Skip to content</a>
+<div class="page-shell">
+<header class="header"><a class="wordmark" href="index.html" aria-label="Martin Vitte, home">mv.</a><nav aria-label="Main navigation"><a href="#projets">Projects</a><a href="#contact">Contact</a></nav><details class="theme-menu"><summary aria-label="Choose color theme"><span class="theme-current-dot" aria-hidden="true"></span><span class="theme-current-name">Pearl</span><span class="theme-chevron" aria-hidden="true">⌄</span></summary><fieldset class="theme-picker"><legend class="sr-only">Color theme</legend><label class="theme-option" style="--swatch:#e1dcd0"><input type="radio" name="theme" value="pearl" aria-label="Pearl" checked><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Pearl</span></label><label class="theme-option" style="--swatch:#edb9ca"><input type="radio" name="theme" value="rose" aria-label="Rose"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Rose</span></label><label class="theme-option" style="--swatch:#bcd3ac"><input type="radio" name="theme" value="sage" aria-label="Sage"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Sage</span></label><label class="theme-option" style="--swatch:#afd3f0"><input type="radio" name="theme" value="sky" aria-label="Sky"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Sky</span></label><label class="theme-option" data-dark style="--swatch:#294563"><input type="radio" name="theme" value="midnight" aria-label="Midnight"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Midnight</span></label><label class="theme-option" data-dark style="--swatch:#292929"><input type="radio" name="theme" value="black" aria-label="Black"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Black</span></label></fieldset></details></header>
+<main id="main">
+<section id="profil" class="intro"><h1>Martin Vitte</h1><p>Computer engineering student.</p></section>
+<section id="projets" aria-labelledby="projects-title"><h2 id="projects-title" class="section-label">Projects</h2><div class="project-grid">
+        <article class="project" data-category="tools security">
+<div class="project-visual desk-visual" aria-label="Personal Desk illustration with fictional data">
+<div class="mock-window"><div class="window-top"><span class="window-dots">● ● ●</span><span>PERSONAL DESK</span><span>↗</span></div><div class="desk-body"><div class="mock-sidebar"><b>p.</b><span class="selected">Overview</span><span>Memory</span><span>Vault</span></div><div class="mock-main"><p class="tiny-label">A LITTLE CLARITY</p><h3>Room for<br>what matters.</h3><div class="mock-grid"><div><span>SCHEDULE</span><strong>14:00</strong><small>Project review</small></div><div><span>NEXT STEP</span><strong>✓</strong><small>Try an idea</small></div></div><div class="mock-memory"><span>◇</span><div><b>An idea to keep</b><small>Your personal memory, stored locally.</small></div></div></div></div></div><span class="visual-caption">Illustration · fictional data</span></div>
+<div class="project-copy"><div class="project-meta"><span>PERSONAL TOOL</span><span class="status">In development</span></div><h3><a href="projets/personal-desk.html">Personal Desk</a></h3><p>A local workspace for emails, your calendar and tasks, with notes for your ideas and an encrypted vault for copies of documents.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>SQLite</li><li>Microsoft Graph</li><li>JavaScript</li></ul>
+            <a class="project-link" href="projets/personal-desk.html" aria-label="View project Personal Desk">View project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+          <article class="project" data-category="security">
+<div class="project-visual mail-visual" aria-label="Illustration of a fictional email analysis"><div class="mail-paper"><div class="mail-header"><span class="mail-avatar">@</span><div><b>Demo account team</b><small>Fictional example, no real email</small></div></div><h3>Review your account</h3><div class="fake-line"></div><div class="fake-line short"></div><div class="signal"><span>!</span><div><b>Link destination mismatch</b><small>A reason to check, not a verdict.</small></div></div><span class="mail-tag">Needs review</span></div><span class="visual-caption">Illustration · fictional message</span></div>
+<div class="project-copy"><div class="project-meta"><span>CYBERSECURITY</span><span class="status">Working prototype</span></div><h3><a href="projets/phishing-detector.html">Phishing Detector</a></h3><p>Analyze emails, explain suspicious signals and find messages that need a closer look directly in Outlook.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>Microsoft Graph</li><li>OAuth</li></ul><a class="project-link" href="projets/phishing-detector.html" aria-label="View project Phishing Detector">View project <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project" data-category="security tools">
+<div class="project-visual block-visual" aria-label="Illustration of ad filtering"><div class="block-orbit ring-a"></div><div class="block-orbit ring-b"></div><span class="ad-chip ad-one" aria-hidden="true">AD ×</span><span class="ad-chip ad-two" aria-hidden="true">POP-UP ×</span><div class="shield" aria-hidden="true"><svg viewBox="0 0 100 110"><path d="M50 8 85 23v29c0 23-15 39-35 49C30 91 15 75 15 52V23Z"/><path d="m32 54 12 12 25-28"/></svg></div><div class="block-label"><span class="active-dot"></span>A quieter web.</div><span class="visual-caption">Illustration of how filtering works</span></div>
+<div class="project-copy"><div class="project-meta"><span>BROWSER EXTENSION</span><span class="status">Available to use</span></div><h3><a href="projets/addblock.html">Addblock</a></h3><p>Reduce unwanted ads and pop-ups, with the option to pause protection on individual sites.</p><ul class="tags" aria-label="Technologies"><li>JavaScript</li><li>Manifest V3</li><li>Chrome / Edge</li></ul><a class="project-link" href="projets/addblock.html" aria-label="View project Addblock">View project <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+        <article class="project" data-category="systems">
+<div class="project-visual terminal-visual"><div class="terminal-heading"><span class="window-dots">● ● ●</span><span>assembly-maze / interactive preview</span></div><pre id="maze-board" tabindex="0" aria-label="Maze. Focus this area and use the arrow keys or WASD. ZQSD also works."></pre><div class="maze-bottom"><p id="maze-status" role="status">Reach S · 0 moves</p><button id="maze-reset" type="button">Restart ↺</button></div><div class="maze-controls" role="group" aria-label="Movement"><button data-move="up" aria-label="Move up">↑</button><button data-move="left" aria-label="Move left">←</button><button data-move="down" aria-label="Move down">↓</button><button data-move="right" aria-label="Move right">→</button></div><p class="terminal-footnote">JavaScript simulation · the original project is written in assembly.</p></div>
+<div class="project-copy"><div class="project-meta"><span>BACK TO BASICS</span><span class="status">Playable in the terminal</span></div><h3><a href="projets/assembly-maze.html">Assembly Maze</a></h3><p>A maze written in x86-64 assembly to explore registers, memory, branching and Linux system calls.</p><ul class="tags" aria-label="Technologies"><li>x86-64</li><li>NASM</li><li>Linux</li><li>GDB</li></ul><a class="project-link" href="projets/assembly-maze.html" aria-label="View project Assembly Maze">View project <span aria-hidden="true">↗</span></a></div>
+</article>
+        </div>
+</section>
+<section id="contact" aria-labelledby="contact-title"><h2 id="contact-title" class="section-label">Contact</h2>
+<div class="contact-list">
+<a href="cv.html">My CV <span aria-hidden="true">↗</span></a>
+<div class="contact-email"><a href="mailto:martin.vitte@epita.fr">martin.vitte@epita.fr</a><button type="button" data-copy-email="martin.vitte@epita.fr" aria-label="Copy martin.vitte@epita.fr" hidden>Copy</button></div>
+<div class="contact-email"><a href="mailto:martin.vitte@hotmail.com">martin.vitte@hotmail.com</a><button type="button" data-copy-email="martin.vitte@hotmail.com" aria-label="Copy martin.vitte@hotmail.com" hidden>Copy</button></div>
+<a href="https://github.com/martinvtt" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> — Opens in a new tab</span></a>
+</div><p class="contact-help">Email links open your default mail app. You can also copy an address.</p><p id="contact-status" role="status" aria-live="polite"></p></section>
+</main>
+<footer><span>Martin Vitte</span><a href="#profil">Back to top ↑</a></footer>
+</div></body></html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Addblock</title><desc id="desc">A quieter web.</desc>
+<rect width="640" height="360" fill="#241e2e"/>
+<g fill="none" stroke="#c2ace7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m320 44 66 26v46c0 40-27 65-66 85-39-20-66-45-66-85V70Z"/><path d="m290 120 22 22 42-47"/></g>
+<text x="320" y="265" text-anchor="middle" fill="#eeeaf2" font-family="Arial, sans-serif" font-size="26">Addblock</text>
+<text x="320" y="298" text-anchor="middle" fill="#b5abbf" font-family="Arial, sans-serif" font-size="15">A quieter web.</text>
+</svg>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phishing Detector — Martin Vitte</title>
+  <meta name="description" content="Analyze emails, explain suspicious signals and find messages that need a closer look directly in Outlook.">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../project-page.css?v=capture-fit-3">
+  
+  <script src="../screenshot.js?v=capture-fit-3" defer></script>
+<link rel="stylesheet" href="../themes.css?v=6">
+<script src="../theme.js?v=6"></script>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+  <div class="page-shell">
+    <header class="header"><a href="../index.html" class="wordmark" aria-label="Martin Vitte, home">mv.</a><nav aria-label="Main navigation"><a href="../index.html#projets">Projects</a><a href="../index.html#contact">Contact</a></nav><details class="theme-menu"><summary aria-label="Choose color theme"><span class="theme-current-dot" aria-hidden="true"></span><span class="theme-current-name">Pearl</span><span class="theme-chevron" aria-hidden="true">⌄</span></summary><fieldset class="theme-picker"><legend class="sr-only">Color theme</legend><label class="theme-option" style="--swatch:#e1dcd0"><input type="radio" name="theme" value="pearl" aria-label="Pearl" checked><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Pearl</span></label><label class="theme-option" style="--swatch:#edb9ca"><input type="radio" name="theme" value="rose" aria-label="Rose"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Rose</span></label><label class="theme-option" style="--swatch:#bcd3ac"><input type="radio" name="theme" value="sage" aria-label="Sage"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Sage</span></label><label class="theme-option" style="--swatch:#afd3f0"><input type="radio" name="theme" value="sky" aria-label="Sky"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Sky</span></label><label class="theme-option" data-dark style="--swatch:#294563"><input type="radio" name="theme" value="midnight" aria-label="Midnight"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Midnight</span></label><label class="theme-option" data-dark style="--swatch:#292929"><input type="radio" name="theme" value="black" aria-label="Black"><span class="theme-swatch" aria-hidden="true"></span><span class="theme-name" aria-hidden="true">Black</span></label></fieldset></details></header>
+    <main id="main" class="project-page">
+      <a class="back-link" href="../index.html#projets">← All projects</a>
+      <header class="project-intro"><div class="project-meta"><span>CYBERSECURITY</span><span class="status">Working prototype</span></div><h1>Phishing Detector</h1><p>Analyze emails, explain suspicious signals and find messages that need a closer look directly in Outlook.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>Microsoft Graph</li><li>OAuth</li></ul></header>
+      <section class="project-demo" aria-labelledby="demo-title">
+        <h2 id="demo-title">See it in action</h2>
+        <video controls playsinline preload="none" poster="../media/phishing-detector.png" aria-label="Project demonstration">
+          <source src="../media/phishing-detector.webm" type="video/webm">
+          <p><a href="../media/phishing-detector.webm">Open the video</a></p>
+        </video>
+        <p class="demo-caption">Phishing Detector · three fictional emails in an isolated test database.</p>
+        <p class="demo-description">Filter messages that need review, open a fictional email and examine the detected signals.</p>
+        <a class="capture-link" href="../media/phishing-detector.png">View full-size screenshot ↗</a>
+      </section>
+      <div class="project-body project-narrative">
+        <p>I wanted to build a cybersecurity project that could be useful day to day. Phishing Detector started with a single email file analyzed in the terminal. Then I wanted to connect it to my mailbox so I would not have to import everything manually.</p>
+        <p>It can now analyze Outlook messages and explain what caught its attention, such as a link pointing somewhere other than the address shown. On request, it adds categories directly in Outlook to help find messages that need review and promotional emails.</p>
+        <p>I tested the labels on my own mailbox. A flagged message is not necessarily fraudulent, though, and some threats can slip through. Tests using fictional emails are not enough to establish real-world reliability; the new Windows version also still needs testing with a real account.</p>
+      </div>
+      <div class="project-return"><a class="button primary" href="../index.html#projets"><span aria-hidden="true">←</span> Back to projects</a></div>
+    </main>
+    <footer><span>Martin Vitte / Phishing Detector</span><a href="../index.html">Back to portfolio ↑</a></footer>
+  </div>
+</body>
+</html>
