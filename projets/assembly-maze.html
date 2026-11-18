@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="light">
   <link rel="icon" href="../icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../project-page.css?v=wide-projects-1">
+  <link rel="stylesheet" href="../project-page.css?v=project-layout-2">
   <script src="../maze.js" defer></script>
 <link rel="stylesheet" href="../themes.css?v=6">
 <script src="../theme.js?v=6"></script>
@@ -20,17 +20,24 @@
       <a class="back-link" href="../index.html#projets">← All projects</a>
       <header class="project-intro"><div class="project-meta"><span>BACK TO BASICS</span><span class="status">Playable in the terminal</span></div><h1>Assembly Maze</h1><p>A maze written in x86-64 assembly to explore registers, memory, branching and Linux system calls.</p><ul class="tags" aria-label="Technologies"><li>x86-64</li><li>NASM</li><li>Linux</li><li>GDB</li></ul></header>
       <div class="project-content">
-        <div class="project-showcase"><div class="project-visual terminal-visual"><div class="terminal-heading"><span class="window-dots">● ● ●</span><span>assembly-maze / interactive preview</span></div><pre id="maze-board" tabindex="0" aria-label="Maze. Focus this area and use the arrow keys or WASD. ZQSD also works."></pre><div class="maze-bottom"><p id="maze-status" role="status">Reach S · 0 moves</p><button id="maze-reset" type="button">Restart ↺</button></div><div class="maze-controls" role="group" aria-label="Movement"><button data-move="up" aria-label="Move up">↑</button><button data-move="left" aria-label="Move left">←</button><button data-move="down" aria-label="Move down">↓</button><button data-move="right" aria-label="Move right">→</button></div><p class="terminal-footnote">JavaScript simulation · the original project is written in assembly.</p></div></div>
+        <section class="project-demo" aria-labelledby="demo-title">
+          <h2 id="demo-title">See it in action</h2>
+          <div class="project-visual terminal-visual"><div class="terminal-heading"><span class="window-dots">● ● ●</span><span>assembly-maze / interactive preview</span></div><pre id="maze-board" tabindex="0" aria-describedby="demo-context" aria-label="Maze. Focus this area and use the arrow keys or WASD. ZQSD also works."></pre><div class="maze-bottom"><p id="maze-status" role="status">Reach S · 0 moves</p><button id="maze-reset" type="button">Restart ↺</button></div><div class="maze-controls" role="group" aria-label="Movement"><button data-move="up" aria-label="Move up">↑</button><button data-move="left" aria-label="Move left">←</button><button data-move="down" aria-label="Move down">↓</button><button data-move="right" aria-label="Move right">→</button></div></div>
+        </section>
         <div class="project-notes">
-          <section class="project-source" aria-labelledby="source-title">
-            <h2 id="source-title">Source code</h2>
-            <a href="https://github.com/martinvtt/asm-maze">View source on GitHub <span aria-hidden="true">↗</span></a>
+          <section class="demo-notes" aria-labelledby="demo-notes-title">
+            <h2 id="demo-notes-title">About the demo</h2>
+            <p class="demo-caption" id="demo-context">JavaScript simulation · the original project is written in assembly.</p>
           </section>
           <div class="project-body project-narrative">
             <p>I wanted to get a better grasp of x86-64 assembly by building something. I chose a small maze: move a character, run into walls and find the way out.</p>
             <p>The program runs in a Linux terminal without the C library. Every move involves the player’s position, memory and branching. The original game uses ZQSD followed by Enter, R to restart and X to quit. Automated tests include complete playthroughs.</p>
             <p>The interactive preview uses the same map in JavaScript so you can try it here with the arrow keys or WASD. The original project is written in assembly and runs on Linux, including Ubuntu or WSL.</p>
           </div>
+          <section class="project-source" aria-labelledby="source-title">
+            <h2 id="source-title">Source code</h2>
+            <a href="https://github.com/martinvtt/asm-maze">View source on GitHub <span aria-hidden="true">↗</span></a>
+          </section>
         </div>
       </div>
       <div class="project-return"><a class="button primary" href="../index.html#projets"><span aria-hidden="true">←</span> Back to projects</a></div>

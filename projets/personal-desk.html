@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="light">
   <link rel="icon" href="../icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../project-page.css?v=wide-projects-1">
+  <link rel="stylesheet" href="../project-page.css?v=project-layout-2">
   
   <script src="../screenshot.js?v=capture-fit-3" defer></script>
 <link rel="stylesheet" href="../themes.css?v=6">
@@ -23,15 +23,18 @@
       <div class="project-content">
         <section class="project-demo" aria-labelledby="demo-title">
           <h2 id="demo-title">See it in action</h2>
-          <video controls playsinline preload="none" poster="../media/personal-desk.png" aria-label="Project demonstration">
+          <video controls playsinline preload="none" poster="../media/personal-desk.png" aria-label="Project demonstration" aria-describedby="demo-context">
             <source src="../media/personal-desk.webm" type="video/webm">
             <p><a href="../media/personal-desk.webm">Open the video</a></p>
           </video>
-          <p class="demo-caption">Personal Desk in demo mode · fictional data.</p>
-          <p class="demo-description">Explore the dashboard, change the theme, then add and complete a sample task.</p>
           <a class="capture-link" href="../media/personal-desk.png">View full-size screenshot ↗</a>
         </section>
         <div class="project-notes">
+          <section class="demo-notes" aria-labelledby="demo-notes-title">
+            <h2 id="demo-notes-title">About the demo</h2>
+            <p class="demo-caption" id="demo-context">Personal Desk in demo mode · fictional data.</p>
+            <p class="demo-description">Explore the dashboard, change the theme, then add and complete a sample task.</p>
+          </section>
           <div class="project-body project-narrative">
             <p>I had a few ideas in mind: a dashboard for my emails and calendar, somewhere to keep my notes, and eventually a “second brain”. Personal Desk grew out of wanting to bring those ideas into one application.</p>
             <p>It brings together Microsoft emails, calendar events and tasks, alongside searchable notes. I also added several themes and a vault for encrypted copies of documents. A version with a Windows installer is available.</p>

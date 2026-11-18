@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="light">
   <link rel="icon" href="../icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../project-page.css?v=wide-projects-1">
+  <link rel="stylesheet" href="../project-page.css?v=project-layout-2">
   
   <script src="../screenshot.js?v=capture-fit-3" defer></script>
 <link rel="stylesheet" href="../themes.css?v=6">
@@ -23,24 +23,27 @@
       <div class="project-content">
         <section class="project-demo" aria-labelledby="demo-title">
           <h2 id="demo-title">See it in action</h2>
-          <video controls playsinline preload="none" poster="../media/phishing-detector.png" aria-label="Project demonstration">
+          <video controls playsinline preload="none" poster="../media/phishing-detector.png" aria-label="Project demonstration" aria-describedby="demo-context">
             <source src="../media/phishing-detector.webm" type="video/webm">
             <p><a href="../media/phishing-detector.webm">Open the video</a></p>
           </video>
-          <p class="demo-caption">Phishing Detector · three fictional emails in an isolated test database.</p>
-          <p class="demo-description">Filter messages that need review, open a fictional email and examine the detected signals.</p>
           <a class="capture-link" href="../media/phishing-detector.png">View full-size screenshot ↗</a>
         </section>
         <div class="project-notes">
-          <section class="project-source" aria-labelledby="source-title">
-            <h2 id="source-title">Source code</h2>
-            <a href="https://github.com/martinvtt/phishing-detector">View source on GitHub <span aria-hidden="true">↗</span></a>
+          <section class="demo-notes" aria-labelledby="demo-notes-title">
+            <h2 id="demo-notes-title">About the demo</h2>
+            <p class="demo-caption" id="demo-context">Phishing Detector · three fictional emails in an isolated test database.</p>
+            <p class="demo-description">Filter messages that need review, open a fictional email and examine the detected signals.</p>
           </section>
           <div class="project-body project-narrative">
             <p>I wanted to build a cybersecurity project that could be useful day to day. Phishing Detector started with a single email file analyzed in the terminal. Then I wanted to connect it to my mailbox so I would not have to import everything manually.</p>
             <p>It can now analyze Outlook messages and explain what caught its attention, such as a link pointing somewhere other than the address shown. On request, it adds categories directly in Outlook to help find messages that need review and promotional emails.</p>
             <p>I tested the labels on my own mailbox. A flagged message is not necessarily fraudulent, though, and some threats can slip through. Tests using fictional emails are not enough to establish real-world reliability; the new Windows version also still needs testing with a real account.</p>
           </div>
+          <section class="project-source" aria-labelledby="source-title">
+            <h2 id="source-title">Source code</h2>
+            <a href="https://github.com/martinvtt/phishing-detector">View source on GitHub <span aria-hidden="true">↗</span></a>
+          </section>
         </div>
       </div>
       <div class="project-return"><a class="button primary" href="../index.html#projets"><span aria-hidden="true">←</span> Back to projects</a></div>

@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="light">
   <link rel="icon" href="../icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../project-page.css?v=wide-projects-1">
+  <link rel="stylesheet" href="../project-page.css?v=project-layout-2">
   
   <script src="../screenshot.js?v=capture-fit-3" defer></script>
 <link rel="stylesheet" href="../themes.css?v=6">
@@ -23,24 +23,27 @@
       <div class="project-content">
         <section class="project-demo" aria-labelledby="demo-title">
           <h2 id="demo-title">See it in action</h2>
-          <video controls playsinline preload="none" poster="../media/addblock.png" aria-label="Project demonstration">
+          <video controls playsinline preload="none" poster="../media/addblock.png" aria-label="Project demonstration" aria-describedby="demo-context">
             <source src="../media/addblock.webm" type="video/webm">
             <p><a href="../media/addblock.webm">Open the video</a></p>
           </video>
-          <p class="demo-caption">Addblock running on its local test page · original French interface · no advertising servers contacted.</p>
-          <p class="demo-description">The sample ad is visible while protection is paused and disappears when protection is enabled. A test click then tries to open an unwanted tab, which is blocked. Useful content stays visible.</p>
           <a class="capture-link" href="../media/addblock.png">View full-size screenshot ↗</a>
         </section>
         <div class="project-notes">
-          <section class="project-source" aria-labelledby="source-title">
-            <h2 id="source-title">Source code</h2>
-            <a href="https://github.com/martinvtt/addblock">View source on GitHub <span aria-hidden="true">↗</span></a>
+          <section class="demo-notes" aria-labelledby="demo-notes-title">
+            <h2 id="demo-notes-title">About the demo</h2>
+            <p class="demo-caption" id="demo-context">Addblock running on its local test page · original French interface · no advertising servers contacted.</p>
+            <p class="demo-description">The sample ad is visible while protection is paused and disappears when protection is enabled. A test click then tries to open an unwanted tab, which is blocked. Useful content stays visible.</p>
           </section>
           <div class="project-body project-narrative">
             <p>I started this project because I was tired of intrusive ads and windows opening whenever I clicked something. I wanted to build an extension I could actually use in my own browser.</p>
             <p>Addblock blocks advertising requests, hides some ad placements and limits pop-ups. You can pause it on individual sites. It can be installed manually in Chrome or Edge.</p>
             <p>It does not block everything: websites change, rules need updating, and some sites detect the extension. It is not available in browser extension stores yet.</p>
           </div>
+          <section class="project-source" aria-labelledby="source-title">
+            <h2 id="source-title">Source code</h2>
+            <a href="https://github.com/martinvtt/addblock">View source on GitHub <span aria-hidden="true">↗</span></a>
+          </section>
         </div>
       </div>
       <div class="project-return"><a class="button primary" href="../index.html#projets"><span aria-hidden="true">←</span> Back to projects</a></div>
